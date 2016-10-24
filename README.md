@@ -1,1 +1,1 @@
-# useful linux scripts
+# some linux scripts
