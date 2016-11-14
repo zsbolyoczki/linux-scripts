@@ -4,4 +4,6 @@
 # rescans SCSI hosts for new disks
 #
 
-for f in $(find /sys/class/scsi_host/host* -maxdepth 1); do echo "- - - " > $f/scan; done
+for i in `ls -1 /sys/class/scsi_host/`; do echo "- - - " > /sys/class/scsi_host/$i/scan; done
+for i in `ls -1 /sys/class/scsi_device/`; do echo "1" > /sys/class/scsi_device/${i}/device/rescan; done
+
