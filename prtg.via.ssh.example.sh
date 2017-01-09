@@ -5,6 +5,13 @@
 # example script for custom ssh prtg sensors
 #
 
+#
+# return format: return code:return value:message
+#
+# return code: this indicates the status to PRTG
+# return value: any numeric value that is typical to the checked property (i.e. http response code, time value, any calculated value, etc.)
+# message: this message will be displayed by prtg as a status message
+#
 
 # return codes:
 # 0 OK
