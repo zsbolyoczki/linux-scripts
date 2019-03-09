@@ -3,7 +3,7 @@
 
 apt update && apt full-upgrade -y
 
-apt -y install less vim tree git netcat rsync atop
+apt install -y less vim tree git netcat rsync atop
 
 echo "syntax on" > /root/.vimrc
 echo "set tabstop=2" >> /root/.vimrc
